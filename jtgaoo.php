@@ -95,9 +95,9 @@ class plgContentJtGaoo extends JPlugin
                         (b[l] . q = b[l] . q || []).push(arguments)
                     });b[l] . l = +new Date;e = o . createElement(i);r = o . getElementsByTagName(i)[0];e . src = '//www.google-analytics.com/analytics.js';r . parentNode . insertBefore(e, r)
                 }(window,document,'script','ga'));
-                if(ga('create', \"" .$ga_id ."\", 'auto') !== undefined) {
+                if(ga('create', '" .$ga_id ."', 'auto') !== undefined) {
                     console.log(ga);
-                    ga('create', " . $ga_id . ", 'auto');
+                    ga('create', '" . $ga_id . "', 'auto');
                     ga('set', 'anonymizeIp', true);
                     ga('send', 'pageview');
                 }
