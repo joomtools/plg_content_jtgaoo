@@ -38,7 +38,7 @@ class plgContentJtGaoo extends JPlugin
         }
 
         $pluginParams = $this->params->toArray();
-        $regex        = '#(<(\w+)+>|){jtgaoo}(</\\2>|)#siU';
+        $regex        = '#(<(\w*+)[^>]*>|){jtgaoo}(</\\2+>|)#siU';
         $p1           = preg_match($regex, $article->text, $matches);
         $gaoolink     = '<a class="jtgaoo" rel="nofollow" href="javascript:gaOptout();">'
             . $this->params->get('jtgaoo_linktext')
