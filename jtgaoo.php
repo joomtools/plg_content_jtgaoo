@@ -39,7 +39,7 @@ class plgContentJtGaoo extends JPlugin
 
         $this->loadLanguage('plg_content_jtgaoo');
 
-        $regex = '@(<(\w*+)[^>]*>|){jtgaoo}(</\2>|)@siU';
+        $regex = '@(<(\w*+)[^>]*>|)({jtgaoo})(</\2>|)@siU';
         $p1    = preg_match($regex, $article->text, $matches);
 
         if ($p1)
