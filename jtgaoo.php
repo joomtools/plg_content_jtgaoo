@@ -76,6 +76,8 @@ class plgContentJtGaoo extends JPlugin
             return;
         }
 
+        $this->loadLanguage('plg_content_jtgaoo');
+
         $ga_id    = $this->params->get('jtgaoo_ga_id');
         $gaScript = "var gaProperty='" . $ga_id . "';"
             . "var disableStr='ga-disable-' + gaProperty;"
