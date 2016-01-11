@@ -126,11 +126,9 @@ class PlgContentJtgaoo extends JPlugin
 			. "});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];"
 			. "e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)"
 			. "}(window,document,'script','ga'));"
-			. "if(ga('create','" . $ga_id . "','auto')!==undefined){"
 			. "ga('create','" . $ga_id . "','auto');"
 			. "ga('set','anonymizeIp',true);"
-			. "ga('send','pageview');"
-			. "}";
+			. "ga('send','pageview');";
 
 		$gaScript = "var gaProperty='" . $ga_id . "';"
 			. "var disableStr='ga-disable-' + gaProperty;"
