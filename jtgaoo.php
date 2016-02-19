@@ -42,7 +42,7 @@ class PlgContentJtgaoo extends JPlugin
 	 *
 	 * @return  void
 	 */
-	public function onContentPrepare($context, &$article, &$params, $page)
+	public function onContentPrepare($context, &$article, &$params, $page=0)
 	{
 		$app = JFactory::getApplication();
 
@@ -111,7 +111,7 @@ class PlgContentJtgaoo extends JPlugin
 	 *
 	 * @return  void
 	 */
-	public function onContentBeforeDisplay($context, &$article, &$params, $page)
+	public function onContentBeforeDisplay($context, &$article, &$params, $page=0)
 	{
 		$app   = JFactory::getApplication();
 		$ga_id = $this->params->get('jtgaoo_ga_id', '');
