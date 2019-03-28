@@ -18,16 +18,28 @@
         <fields name="params">
 
             <fieldset name="basic">
+                <field name="jtgaoo_ga_gtag"
+                       type="radio"
+                       class="btn-group"
+                       default="2"
+                       label="PLG_CONTENT_JTGAOO_GA_GTAG_LABEL"
+                       description="PLG_CONTENT_JTGAOO_GA_GTAG_DESC"
+                >
+                    <option value="1">PLG_CONTENT_JTGAOO_GTAG</option>
+                    <option value="2">PLG_CONTENT_JTGAOO_GA</option>
+                </field>
                 <field name="jtgaoo_ga_id"
                        type="text"
                        default=""
                        label="PLG_CONTENT_JTGAOO_GA_ID_LABEL"
-                       description="PLG_CONTENT_JTGAOO_GA_ID_DESC"/>
+                       description="PLG_CONTENT_JTGAOO_GA_ID_DESC"
+                />
                 <field name="jtgaoo_linktext"
                        type="text"
                        default=""
                        label="PLG_CONTENT_JTGAOO_LINKTEXT_LABEL"
-                       description="PLG_CONTENT_JTGAOO_LINKTEXT_DESC"/>
+                       description="PLG_CONTENT_JTGAOO_LINKTEXT_DESC"
+                />
             </fieldset>
 
         </fields>
